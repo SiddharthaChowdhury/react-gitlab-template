@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
 import './fixedLeftNav.scss';
-import { menuItem } from '../menuItem/menuItem';
+import { menuItemMap } from '../menuItem/menuItemMap';
 import { IMenuItem } from '../menuItem/IMenuItem';
 import { MenuItem } from '../menuItem/MenuItem';
 
@@ -11,7 +11,7 @@ export class FixedLeftNav extends React.PureComponent {
     constructor(props: any) {
         super(props)
 
-        menuItem.forEach((value: IMenuItem, key: string) => {
+        menuItemMap.forEach((value: IMenuItem, key: string) => {
             this.menuList.push(value)
         })
     }

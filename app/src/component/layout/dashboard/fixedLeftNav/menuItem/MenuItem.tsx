@@ -1,8 +1,7 @@
 import React from 'react';
 import './menuItem.scss'
-import { IMenuItemSubMenuList } from '../../../../../genericTypes/IMenuItemSubMenuList';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IMenuItem } from './IMenuItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface IMenuItemProps extends IMenuItem{}
 
@@ -11,9 +10,9 @@ export class MenuItem extends React.PureComponent<IMenuItemProps> {
         const {
             text,
             icon: Icon,
-            trigger,
-            subMenuList,
-            bubbleNumber
+            // trigger,
+            // subMenuList,
+            // bubbleNumber
         } = this.props
 
         return (

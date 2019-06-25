@@ -3,7 +3,7 @@ import { faTasks, faAdjust } from "@fortawesome/free-solid-svg-icons";
 
 // This content should be in store
 
-export const menuItem: Map<string,IMenuItem > = new Map([
+export const menuItemMap: Map<string,IMenuItem > = new Map([
     ['Project', {
         text: 'Project',
         icon: faTasks,
