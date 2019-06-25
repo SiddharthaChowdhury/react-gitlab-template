@@ -5,7 +5,6 @@ export class Content extends React.PureComponent {
     public render() {
         return (
             <div className="content">
-                <div className="test"></div>
             </div>
         )
     }

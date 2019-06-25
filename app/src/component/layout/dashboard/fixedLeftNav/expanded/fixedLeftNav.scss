@@ -10,5 +10,13 @@
     background-color: #FAFAFA;
     z-index: $ZIndexSideNav;
     border-right: 1px solid $NavigationBorderColor;
+
+    .fixedLeftNav-toggleButton {
+        position: absolute;
+        border-top: 1px solid $NavigationBorderColor;
+        bottom: 0;
+        height: 45px;
+        width: 100%;
+    }
 }
   

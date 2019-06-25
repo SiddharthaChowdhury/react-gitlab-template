@@ -8,6 +8,7 @@
     left: 0;
     width: 50px;
     background-color: #FAFAFA;
-    z-index: ZIndexSideNav;
+    z-index: $ZIndexSideNav;
+    border-right: 1px solid $NavigationBorderColor;
 }
   
