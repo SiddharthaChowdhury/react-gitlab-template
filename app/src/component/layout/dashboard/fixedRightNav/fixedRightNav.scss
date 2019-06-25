@@ -7,8 +7,9 @@
     top:0;
     right: 0;
     width: 60px;
-    background-color: #FAFAFA;
+    background-color: $NavigationBackground;
     z-index: ZIndexSideNav;
     border-left: 1px solid $NavigationBorderColor;
+    font-size: 14px;
 }
   

@@ -7,9 +7,10 @@
     top:0;
     left: 0;
     width: 220px;
-    background-color: #FAFAFA;
+    background-color: $NavigationBackground;
     z-index: $ZIndexSideNav;
     border-right: 1px solid $NavigationBorderColor;
+    font-size: 14px;
 
     .fixedLeftNav-toggleButton {
         position: absolute;
@@ -17,6 +18,23 @@
         bottom: 0;
         height: 45px;
         width: 100%;
+        color: $NavigationFontColor;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        cursor: pointer;
+                
+        * {
+            margin-left: 10px
+        }
+
+        .collapse-icon{
+            // color: red;
+            // height: 0px;
+            margin-bottom: 1px;
+            margin-left: 15px;
+        }
     }
 }
   
