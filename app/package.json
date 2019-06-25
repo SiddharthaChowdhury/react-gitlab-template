@@ -36,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": ["template", "gitlab", "react", "gitlab-template", "side-nav", "react-template", "dashboard-template", "gitlab-dashboard-template"]
 }
