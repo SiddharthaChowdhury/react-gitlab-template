@@ -3,6 +3,7 @@
 .fixedLeftNav{
     min-height: 100%;
     display: flex;
+    flex-direction: column;
     position: fixed;
     top:0;
     left: 0;
@@ -11,6 +12,15 @@
     z-index: $ZIndexSideNav;
     border-right: 1px solid $NavigationBorderColor;
     font-size: 14px;
+    padding-top: 40px;
+
+    .fixedLeftNav-project {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
     .fixedLeftNav-toggleButton {
         position: absolute;
@@ -20,18 +30,13 @@
         width: 100%;
         color: $NavigationFontColor;
         display: flex;
-        // justify-content: center;
         align-items: center;
         flex-direction: row;
         cursor: pointer;
                 
-        * {
-            margin-left: 10px
-        }
+        * {margin-left: 10px}
 
         .collapse-icon{
-            // color: red;
-            // height: 0px;
             margin-bottom: 1px;
             margin-left: 15px;
         }
