@@ -1,0 +1,14 @@
+@import "../../../../variables.scss";
+
+.fixedRightNav{
+    min-height: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 60px;
+    background-color: #FAFAFA;
+    z-index: ZIndexSideNav;
+    border-left: 1px solid $NavigationBorderColor;
+}
+  

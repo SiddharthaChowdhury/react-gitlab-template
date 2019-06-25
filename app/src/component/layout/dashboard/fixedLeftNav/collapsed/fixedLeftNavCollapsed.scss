@@ -1,0 +1,13 @@
+@import "../../../../../variables.scss";
+
+.fixedLeftNavCollapsed{
+    min-height: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 50px;
+    background-color: #FAFAFA;
+    z-index: ZIndexSideNav;
+}
+  

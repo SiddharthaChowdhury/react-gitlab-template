@@ -1,0 +1,14 @@
+@import "../../../../../variables.scss";
+
+.fixedLeftNav{
+    min-height: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 220px;
+    background-color: #FAFAFA;
+    z-index: $ZIndexSideNav;
+    border-right: 1px solid $NavigationBorderColor;
+}
+  
