@@ -1,45 +1,54 @@
 @import "../../../../../variables.scss";
 
 .fixedLeftNav{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
     position: fixed;
     top:0;
     left: 0;
     width: 220px;
-    background-color: $NavigationBackground;
     z-index: $ZIndexSideNav;
-    border-right: 1px solid $NavigationBorderColor;
-    font-size: 14px;
-    padding-top: 40px;
+    color: $NavigationFontColor;
 
-    .fixedLeftNav-project {
-        height: 50px;
+    .fixedLeftNav-container {
+        height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-    }
+        background-color: $NavigationBackground;
+        border-right: 1px solid $NavigationBorderColor;
+        font-size: 14px;
 
-    .fixedLeftNav-toggleButton {
-        position: absolute;
-        border-top: 1px solid $NavigationBorderColor;
-        bottom: 0;
-        height: 45px;
-        width: 100%;
-        color: $NavigationFontColor;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        cursor: pointer;
-                
-        * {margin-left: 10px}
-
-        .collapse-icon{
-            margin-bottom: 1px;
-            margin-left: 15px;
+        .fixedLeftNav-project {
+            margin-top: 40px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+    
+            &:hover{
+                background-color: $NavigationMenuHover;
+            }
+        }
+    
+        .fixedLeftNav-toggleButton {
+            margin-top:auto;
+            border-top: 1px solid $NavigationBorderColor;
+            height: 45px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            cursor: pointer;
+                    
+            * {margin-left: 10px}
+    
+            .collapse-icon{
+                margin-bottom: 1px;
+                margin-left: 15px;
+            }
         }
     }
+
 }
   

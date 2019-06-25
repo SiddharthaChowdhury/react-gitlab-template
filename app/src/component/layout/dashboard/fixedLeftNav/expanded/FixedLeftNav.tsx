@@ -19,17 +19,19 @@ export class FixedLeftNav extends React.PureComponent {
     public render() {
         return (
             <div className="fixedLeftNav">
-                <div className="fixedLeftNav-project">  
-                    <div>Project 1</div>
-                </div>
-                <div className="fixedleftNav-menuItems">
-                    {this.menuList.map((item: IMenuItem, index: number) => {
-                        return (<MenuItem text={item.text} icon={item.icon} key={index}/>)
-                    })}
-                </div>
-                <div className="fixedLeftNav-toggleButton">
-                    <FontAwesomeIcon icon={faAngleDoubleLeft} className="collapse-icon"/>
-                    <span>Collapse sidebar</span>
+                <div className="fixedLeftNav-container">
+                    <div className="fixedLeftNav-project">  
+                        <div>Project 1</div>
+                    </div>
+                    <div className="fixedleftNav-menuItems">
+                        {this.menuList.map((item: IMenuItem, index: number) => {
+                            return (<MenuItem text={item.text} icon={item.icon} key={index}/>)
+                        })}
+                    </div>
+                    <div className="fixedLeftNav-toggleButton">
+                        <FontAwesomeIcon icon={faAngleDoubleLeft} className="collapse-icon"/>
+                        <span>Collapse sidebar</span>
+                    </div>
                 </div>
             </div>
         )
