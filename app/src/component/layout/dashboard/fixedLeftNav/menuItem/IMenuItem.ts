@@ -3,6 +3,7 @@ import { IMenuItemSubMenuList } from "../../../../../genericTypes/IMenuItemSubMe
 export interface IMenuItem {
     text: string;
     icon: any;
+    isEnabled?: boolean;
     trigger?: string;
     subMenuList?: Array<IMenuItemSubMenuList>
     bubbleNumber?: number;

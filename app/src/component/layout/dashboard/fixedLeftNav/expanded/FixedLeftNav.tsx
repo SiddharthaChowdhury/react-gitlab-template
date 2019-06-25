@@ -20,12 +20,21 @@ export class FixedLeftNav extends React.PureComponent {
         return (
             <div className="fixedLeftNav">
                 <div className="fixedLeftNav-container">
-                    <div className="fixedLeftNav-project">  
-                        <div>Project 1</div>
+                    <div className="fixedLeftNav-project">
+                        <div className="fixedLeftNav-project-icon"></div>
+                        <div className="fixedLeftNav-project-name">Project 1</div>
                     </div>
                     <div className="fixedleftNav-menuItems">
                         {this.menuList.map((item: IMenuItem, index: number) => {
-                            return (<MenuItem text={item.text} icon={item.icon} key={index}/>)
+                            return (
+                            <MenuItem 
+                                text={item.text} 
+                                icon={item.icon} 
+                                bubbleNumber={item.bubbleNumber}
+                                subMenuList={item.subMenuList}
+                                isEnabled={item.isEnabled}
+                                key={index}
+                            />)
                         })}
                     </div>
                     <div className="fixedLeftNav-toggleButton">

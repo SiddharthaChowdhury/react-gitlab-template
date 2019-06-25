@@ -22,12 +22,25 @@
             height: 60px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            flex-direction: row;
             cursor: pointer;
     
             &:hover{
                 background-color: $NavigationMenuHover;
+            }
+
+            .fixedLeftNav-project-icon{
+                border-radius: 5px;
+                border: 1px solid $NavigationBorderColor;
+                width: 35px;
+                height: 35px;
+                margin: 0px 10px;
+                background-color: #FFFFFF;
+            }
+
+            .fixedLeftNav-project-name{
+                color: black;
+                font-weight: 500;
             }
         }
     

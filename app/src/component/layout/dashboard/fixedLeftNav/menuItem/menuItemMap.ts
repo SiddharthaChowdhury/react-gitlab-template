@@ -1,18 +1,48 @@
 import { IMenuItem } from "./IMenuItem";
-import { faTasks, faAdjust } from "@fortawesome/free-solid-svg-icons";
+import { faTasks, faAdjust, faFire } from "@fortawesome/free-solid-svg-icons";
 
 // This content should be in store
 
 export const menuItemMap: Map<string,IMenuItem > = new Map([
-    ['Project', {
-        text: 'Project',
+    ['Overview', {
+        text: 'Overview',
         icon: faTasks,
-        trigger: '/'
+        trigger: '/',
+        isEnabled: false
     }],
 
-    ['Issues', {
-        text: 'Issues',
+    ['Packages', {
+        text: 'Packages',
         icon: faAdjust,
-        bubbleNumber: 12
+        bubbleNumber: 12,
+        isEnabled: false
+    }],
+    ['Epics', {
+        text: 'Epics',
+        icon: faFire,
+        isEnabled: true,
+        bubbleNumber: 120,
+        subMenuList: [{
+            text: 'List',
+            triggerLink: '/',
+            isEnabled: true
+        },{
+            text: 'Roadmap',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Blabla',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Commits',
+            triggerLink: '/',
+            isEnabled: false
+        }]
+    }],
+    ['Planets', {
+        text: 'Planets',
+        icon: faAdjust,
+        isEnabled: false
     }]
 ])
