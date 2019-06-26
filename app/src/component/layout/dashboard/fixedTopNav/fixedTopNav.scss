@@ -8,4 +8,22 @@
     top: 0;
     left: 0;
     z-index: $ZIndexTopNav;
+    display: flex;
+    align-items: center;
+
+    .fixedTopNav-left{
+        margin-right: auto;
+        margin-left: 10px;
+        display: flex;
+
+        .logo{
+            border: 1px solid $PrimaryLight;
+            width: 70px;
+            margin-right: 4px;
+        }
+    }
+
+    .fixedTopNav-right{
+        margin-left: auto;
+    }
 }

@@ -1,24 +1,24 @@
 import { IMenuItem } from "./IMenuItem";
-import { faTasks, faAdjust, faFire } from "@fortawesome/free-solid-svg-icons";
+import { faTasks, faAdjust, faFire, faSun } from "@fortawesome/free-solid-svg-icons";
 
 // This content should be in state
 
 export const menuItemMap: Map<string,IMenuItem > = new Map([
-    ['Overview', {
-        text: 'Overview',
+    ['Normal', {
+        text: 'Normal',
         icon: faTasks,
         trigger: '/',
         isEnabled: false
     }],
 
-    ['Packages', {
-        text: 'Packages',
-        icon: faAdjust,
+    ['Bubble', {
+        text: 'Bubble',
+        icon: faSun,
         bubbleNumber: 12,
         isEnabled: false
     }],
-    ['Epics', {
-        text: 'Epics',
+    ['ActiveMenu', {
+        text: 'Active menu',
         icon: faFire,
         isEnabled: true,
         bubbleNumber: 120,
@@ -40,8 +40,8 @@ export const menuItemMap: Map<string,IMenuItem > = new Map([
             isEnabled: false
         }]
     }],
-    ['Planets', {
-        text: 'Planets',
+    ['HiddenSubmenu', {
+        text: 'Hidden submenu',
         icon: faAdjust,
         isEnabled: false,
         subMenuList: [{
