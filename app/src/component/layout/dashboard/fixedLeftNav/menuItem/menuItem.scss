@@ -59,3 +59,10 @@
     color: $Primary;
     font-weight: 500;
 }
+
+.popupMenu {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
