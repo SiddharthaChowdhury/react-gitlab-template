@@ -23,7 +23,7 @@ export class MenuItem extends React.PureComponent<IMenuItemProps> {
                     <span>{text}</span>
                     {this.getBubbleNumber()}
                 </div>
-                {this.getSubMenuList()}
+                { isEnabled && this.getSubMenuList()}
             </div>
         );
     }

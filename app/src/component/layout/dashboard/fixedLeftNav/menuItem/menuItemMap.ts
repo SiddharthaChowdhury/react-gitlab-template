@@ -1,7 +1,7 @@
 import { IMenuItem } from "./IMenuItem";
 import { faTasks, faAdjust, faFire } from "@fortawesome/free-solid-svg-icons";
 
-// This content should be in store
+// This content should be in state
 
 export const menuItemMap: Map<string,IMenuItem > = new Map([
     ['Overview', {
@@ -43,6 +43,23 @@ export const menuItemMap: Map<string,IMenuItem > = new Map([
     ['Planets', {
         text: 'Planets',
         icon: faAdjust,
-        isEnabled: false
+        isEnabled: false,
+        subMenuList: [{
+            text: 'List',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Roadmap',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Blabla',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Commits',
+            triggerLink: '/',
+            isEnabled: false
+        }]
     }]
 ])
