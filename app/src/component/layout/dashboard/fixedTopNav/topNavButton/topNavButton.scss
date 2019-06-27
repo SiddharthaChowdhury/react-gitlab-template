@@ -5,10 +5,14 @@
     height: 30px;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
     margin-right: 2px;
     color: $TopNavFontColor;
     font-size: 12px;
+    margin-right: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .topNavButton{
