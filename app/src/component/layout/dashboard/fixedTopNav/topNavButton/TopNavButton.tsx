@@ -53,8 +53,8 @@ const getIcons = (props: ITopNavButtonProps) => {
 
 const isIconButton = (icon: any) => {
     if(icon !== faAngleDown) {
-        return 'fa-lg topNavButton-icon';
+        return 'fa-lg';
     }
 
-    return '';
+    return 'topNavButton-iconArrow';
 }

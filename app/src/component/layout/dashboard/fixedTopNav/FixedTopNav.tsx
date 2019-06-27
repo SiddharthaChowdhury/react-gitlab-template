@@ -2,6 +2,7 @@ import React from 'react';
 import './fixedTopNav.scss';
 import { TopNavButton } from './topNavButton/TopNavButton';
 import { faAngleDown, faChartArea, faPlusSquare, faComment, faQuestionCircle, faBook, faTicketAlt } from '@fortawesome/free-solid-svg-icons';
+import { TopNavSearchBar } from './topNavSearchBar/TopNavSearchBar';
 
 export class FixedTopNav extends React.PureComponent {
     public render() {
@@ -18,6 +19,7 @@ export class FixedTopNav extends React.PureComponent {
                 </div>
                 <div className="fixedTopNav-right">
                     <TopNavButton icons={[faPlusSquare, faAngleDown]}/>
+                    <TopNavSearchBar/>
                     <TopNavButton icons={[faComment]}/>
                     <TopNavButton icons={[faBook]}/>
                     <TopNavButton icons={[faTicketAlt]}/>
