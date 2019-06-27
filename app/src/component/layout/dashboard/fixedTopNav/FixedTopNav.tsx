@@ -13,7 +13,7 @@ export class FixedTopNav extends React.PureComponent {
                     <TopNavButton text="Projects" icons={[faAngleDown]}/>
                     <TopNavButton text="Groups" icons={[faAngleDown]}/>
                     <TopNavButton text="Activity"/>
-                    <TopNavButton text="Milestone"/>
+                    <TopNavButton text="Milestones"/>
                     <TopNavButton text="Snippets"/>
                     <TopNavButton icons={[faChartArea]}/>
                 </div>
