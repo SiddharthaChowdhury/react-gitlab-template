@@ -38,7 +38,7 @@ export class FixedLeftNav extends React.PureComponent {
                         })}
                     </div>
                     <div className="fixedLeftNav-toggleButton">
-                        <FontAwesomeIcon icon={faAngleDoubleLeft} className="collapse-icon"/>
+                        <FontAwesomeIcon icon={faAngleDoubleLeft} className="collapse-icon fa-lg"/>
                         <span>Collapse sidebar</span>
                     </div>
                 </div>

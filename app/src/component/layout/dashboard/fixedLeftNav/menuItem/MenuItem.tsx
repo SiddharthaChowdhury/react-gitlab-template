@@ -63,8 +63,8 @@ export class MenuItem extends React.PureComponent<IMenuItemProps> {
                     mouseEnterDelay={0}
                     contentStyle={{ padding: "0px", border: "none" }}
                     arrow={false}
-                    >
-                    <div className="popupMenu">
+                >
+                    <div className="leftNav-popupMenu">
                         {this.getSubMenuList()}
                     </div>
                 </Popup>

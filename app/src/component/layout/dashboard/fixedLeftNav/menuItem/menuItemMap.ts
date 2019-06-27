@@ -1,5 +1,5 @@
 import { IMenuItem } from "./IMenuItem";
-import { faTasks, faAdjust, faFire, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faTasks, faAdjust, faFire, faSun, faCog } from "@fortawesome/free-solid-svg-icons";
 
 // This content should be in state
 
@@ -16,6 +16,28 @@ export const menuItemMap: Map<string,IMenuItem > = new Map([
         icon: faSun,
         bubbleNumber: 12,
         isEnabled: false
+    }],
+    ['HiddenSubmenu', {
+        text: 'Hidden submenu',
+        icon: faAdjust,
+        isEnabled: false,
+        subMenuList: [{
+            text: 'List',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Roadmap',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Blabla',
+            triggerLink: '/',
+            isEnabled: false
+        },{
+            text: 'Commits',
+            triggerLink: '/',
+            isEnabled: false
+        }]
     }],
     ['ActiveMenu', {
         text: 'Active menu',
@@ -40,26 +62,10 @@ export const menuItemMap: Map<string,IMenuItem > = new Map([
             isEnabled: false
         }]
     }],
-    ['HiddenSubmenu', {
-        text: 'Hidden submenu',
-        icon: faAdjust,
-        isEnabled: false,
-        subMenuList: [{
-            text: 'List',
-            triggerLink: '/',
-            isEnabled: false
-        },{
-            text: 'Roadmap',
-            triggerLink: '/',
-            isEnabled: false
-        },{
-            text: 'Blabla',
-            triggerLink: '/',
-            isEnabled: false
-        },{
-            text: 'Commits',
-            triggerLink: '/',
-            isEnabled: false
-        }]
+    ['Settings', {
+        text: 'Settings',
+        icon: faCog,
+        trigger: '/',
+        isEnabled: false
     }]
 ])
