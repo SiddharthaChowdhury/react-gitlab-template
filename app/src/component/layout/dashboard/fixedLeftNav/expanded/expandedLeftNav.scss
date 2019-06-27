@@ -1,6 +1,6 @@
 @import "../../../../../variables.scss";
 
-.fixedLeftNav{
+.expandedLeftNav{
     height: 100%;
     position: fixed;
     top:0;
@@ -9,7 +9,7 @@
     z-index: $ZIndexSideNav;
     color: $NavigationFontColor;
 
-    .fixedLeftNav-container {
+    .expandedLeftNav-container {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -17,7 +17,7 @@
         border-right: 1px solid $NavigationBorderColor;
         font-size: 14px;
 
-        .fixedLeftNav-project {
+        .expandedLeftNav-project {
             margin-top: 40px;
             height: 60px;
             display: flex;
@@ -29,7 +29,7 @@
                 background-color: $NavigationMenuHover;
             }
 
-            .fixedLeftNav-project-icon{
+            .expandedLeftNav-project-icon{
                 border-radius: 5px;
                 border: 1px solid $NavigationBorderColor;
                 width: 35px;
@@ -38,13 +38,13 @@
                 background-color: #FFFFFF;
             }
 
-            .fixedLeftNav-project-name{
+            .expandedLeftNav-project-name{
                 color: black;
                 font-weight: 500;
             }
         }
     
-        .fixedLeftNav-toggleButton {
+        .expandedLeftNav-toggleButton {
             margin-top:auto;
             border-top: 1px solid $NavigationBorderColor;
             height: 47px;

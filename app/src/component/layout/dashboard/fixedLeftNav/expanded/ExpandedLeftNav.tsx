@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons'
-import './fixedLeftNav.scss';
+import './expandedLeftNav.scss';
 import { menuItemMap } from '../menuItem/menuItemMap';
 import { IMenuItem } from '../menuItem/IMenuItem';
 import { MenuItem } from '../menuItem/MenuItem';
 
-export class FixedLeftNav extends React.PureComponent {
+export class ExpandedLeftNav extends React.PureComponent {
     private menuList: Array<IMenuItem> = []
     constructor(props: any) {
         super(props)
@@ -18,13 +18,13 @@ export class FixedLeftNav extends React.PureComponent {
 
     public render() {
         return (
-            <div className="fixedLeftNav">
-                <div className="fixedLeftNav-container">
-                    <div className="fixedLeftNav-project">
-                        <div className="fixedLeftNav-project-icon"></div>
-                        <div className="fixedLeftNav-project-name">Project 1</div>
+            <div className="expandedLeftNav">
+                <div className="expandedLeftNav-container">
+                    <div className="expandedLeftNav-project">
+                        <div className="expandedLeftNav-project-icon"></div>
+                        <div className="expandedLeftNav-project-name">Project 1</div>
                     </div>
-                    <div className="fixedleftNav-menuItems">
+                    <div className="expandedleftNav-menuItems">
                         {this.menuList.map((item: IMenuItem, index: number) => {
                             return (
                             <MenuItem 
@@ -37,7 +37,7 @@ export class FixedLeftNav extends React.PureComponent {
                             />)
                         })}
                     </div>
-                    <div className="fixedLeftNav-toggleButton">
+                    <div className="expandedLeftNav-toggleButton">
                         <FontAwesomeIcon icon={faAngleDoubleLeft} className="collapse-icon fa-lg"/>
                         <span>Collapse sidebar</span>
                     </div>

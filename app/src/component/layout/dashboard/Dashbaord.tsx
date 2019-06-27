@@ -2,8 +2,8 @@ import React from 'react';
 import { Footer } from './footer/Footer';
 import { FixedTopNav } from './fixedTopNav/FixedTopNav'
 import { Content } from './content/Content';
-import { RightNav } from './fixedRightNav/RightNav';
-import { FixedLeftNav } from './fixedLeftNav/expanded/FixedLeftNav';
+import { FixedRightNav } from './fixedRightNav/FixedRightNav';
+import { FixedLeftNav } from './fixedLeftNav/FixedLeftNav';
 
 export class Dashboard extends React.PureComponent {
     public render() {
@@ -12,7 +12,7 @@ export class Dashboard extends React.PureComponent {
                 <FixedTopNav/>
                 <FixedLeftNav/>
                 <Content/>
-                <RightNav/>
+                <FixedRightNav/>
                 <Footer/>
             </React.Fragment>
         )
