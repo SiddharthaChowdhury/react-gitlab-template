@@ -1,5 +1,16 @@
 @import "../../../../../variables.scss";
 
+.topNavButton-custom {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin-right: 2px;
+    color: $TopNavFontColor;
+    font-size: 12px;
+}
+
 .topNavButton{
     display: flex;
     height: 30px;
@@ -24,6 +35,10 @@
 
     .topNavButton-iconCont{
         margin: 2px 2px 0 2px;
+    }
+
+    .topNavButton-icon{
+        margin-right: 5px;
     }
     
 }

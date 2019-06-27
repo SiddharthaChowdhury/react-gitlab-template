@@ -20,10 +20,20 @@
             border: 1px solid $PrimaryLight;
             width: 70px;
             margin-right: 4px;
+            height: 30px;
         }
     }
 
     .fixedTopNav-right{
         margin-left: auto;
+        display: flex;
+
+        .userAccount{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid $PrimaryLight;
+            margin-right: 8px;
+        }
     }
 }
