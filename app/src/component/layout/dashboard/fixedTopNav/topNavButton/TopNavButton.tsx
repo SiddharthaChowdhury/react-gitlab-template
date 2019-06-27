@@ -39,10 +39,9 @@ const getIcons = (props: ITopNavButtonProps) => {
 
     return icons.map((icon: any, key: number) => {
         return (
-            <span className="topNavButton-iconCont">
+            <span className="topNavButton-iconCont" key={key}>
                 <FontAwesomeIcon 
-                icon={icon} 
-                key={key} 
+                icon={icon}  
                 className={isIconButton(icon)}
                 />
             </span>

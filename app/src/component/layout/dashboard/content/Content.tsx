@@ -2,6 +2,9 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import './content.scss';
 import { IdNavStatus } from '../IdNavStatus';
+import {getDeviceTypeInfo} from "responsive-react/dist/utilResponsive";
+ import {IDeviceTypeInfo} from "responsive-react/dist/types";
+import { IdDeviceTypeBreakdown } from 'responsive-react/dist/ids';
 
 export class Content extends React.PureComponent {
     public render() {
@@ -15,6 +18,7 @@ export class Content extends React.PureComponent {
     }
 
     private getContainerWidth = (env: IdNavStatus): React.CSSProperties => {
+        const device: IDeviceTypeInfo  = getDeviceTypeInfo()
 
         switch(env) {
             case IdNavStatus.LnRn:
@@ -22,15 +26,13 @@ export class Content extends React.PureComponent {
                 return { width: '70%' };
 
             case IdNavStatus.LeRe:
-                /* TODO:    add more breakdowns on display size 
-                            for example - { width: '65%'}; for screenSize >= 1440 
+                if(device.deviceTypeVariant === IdDeviceTypeBreakdown.LaptopSmall ) {
+                    console.log("laptopsmall")
+                    return { width: '50%', paddingRight: '60px'};
+                }
 
-                            package ref: https://www.npmjs.com/package/responsive-react
-                            use: getDeviceTypeInfo() [returnType: IDeviceTypeInfo]
-                */
-
-                // screenSize >= 1024 && screenSize <= 1439
-                return { width: '50%', paddingRight: '60px'};
+                return { width: '65%', paddingRight: '60px'};
+                
 
             default: 
                 // case IdNavStatus.LcRe:
