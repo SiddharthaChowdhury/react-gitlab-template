@@ -1,0 +1,15 @@
+@import "../../../../..variables.scss";
+
+.collapsedRightNav{
+    min-height: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 60px;
+    background-color: $NavigationBackground;
+    z-index: ZIndexSideNav;
+    border-left: 1px solid $NavigationBorderColor;
+    font-size: 14px;
+}
+  
