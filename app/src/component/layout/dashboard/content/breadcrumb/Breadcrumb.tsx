@@ -1,7 +1,6 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import './breadcrumb.scss'
@@ -13,7 +12,7 @@ export const Breadcrumb: React.FC<any> = () => {
 				<Link color="inherit" href="/">Account</Link>
 				<Link color="inherit" href="/">Department</Link>
 				<Link color="inherit" href="/">Project</Link>
-				<Typography color="textPrimary">Particular</Typography>
+				<span>Particular</span>
 			</Breadcrumbs>
       </Paper>
     );
