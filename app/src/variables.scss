@@ -1,11 +1,16 @@
 // theme
 $Primary: #292860;
 $PrimaryLight: #4c4d7f;
+$PrimaryBackGround: #ffffff;
+$PrimaryBorderColor: rgba(0, 0, 0, 0.1);
+
+$FontSizeSmall: 12px;
+$FontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $ZIndexSideNav: 101;
 $ZIndexTopNav: 102;
 
-$NavigationBorderColor:rgba(0, 0, 0, 0.1);
+$NavigationBorderColor: $PrimaryBorderColor;
 $NavigationFontColor:#707070;
 $NavigationBackground: #fafafa;
 $NavigationMenuHover: #e5e5e5;
@@ -13,5 +18,6 @@ $NavigationMenuEnable: #f0f0f0;
 $NavigationBubbleColor: #dedede;
 $NavigationMenuItemBorder: #4B4BA3;
 
+$TopNavHeight: 40px;
 $TopNavFontColor: #CCCCEB;
 $TopNavSearchBarBackground: #4B4A7D;

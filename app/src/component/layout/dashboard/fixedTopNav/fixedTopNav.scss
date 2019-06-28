@@ -1,7 +1,7 @@
 @import "../../../../variables.scss";
 
 .fixedTopNav{
-    height: 40px;
+    height: $TopNavHeight;
     width: 100%;
     background-color: $Primary;
     position: fixed;

@@ -1,3 +1,5 @@
+@import "../../../../variables.scss";
+
 .content{
     min-height: 100%;
     display: flex;
@@ -5,8 +7,14 @@
     margin: 0 auto;
 
     .container {
-        background-color: aliceblue;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: $PrimaryBackGround;
+        margin: $TopNavHeight auto;
+
+        .container-breadcrumb{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $PrimaryBorderColor;
+        }
     }
 }
