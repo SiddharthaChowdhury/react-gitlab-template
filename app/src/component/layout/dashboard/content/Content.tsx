@@ -7,6 +7,7 @@ import { Breadcrumb } from './breadcrumb/Breadcrumb';
 import { Heading } from '../../../generic/typography/heading/Heading';
 import { Btn } from '../../../generic/buttons/btn/Btn';
 import { IdBtnColor } from '../../../generic/buttons/IdBtnColor';
+import { BtnMenu } from '../../../generic/buttons/btnWithMenu/BtnMenu';
 
 interface IContentOwnState {
     navStatus: IdNavStatus
@@ -32,7 +33,7 @@ export class Content extends React.PureComponent {
                         <Heading> This is "Heading" from typography</Heading>
                     </Segment>
                     <Segment>
-                        <div style={{display: 'flex'}}>
+                        <div style={{display: 'flex', width: '100%'}}>
                             <Btn text={'Default Btn'}/>
                             <Btn text={'Disable Btn'} solid={true}/>
 
@@ -47,6 +48,11 @@ export class Content extends React.PureComponent {
 
                             <Btn text={'Red Btn'} color={IdBtnColor.RED}/>
                             <Btn text={'Red Btn'} color={IdBtnColor.RED} solid={true}/>
+                        </div>
+                        <div style={{display: 'flex', width: '100%'}}>
+                            <BtnMenu text="button BtnMenu" menu={
+                                <h3>Menu Content in dropdown</h3>
+                            } />
                         </div>
                     </Segment>
                 </Container>
