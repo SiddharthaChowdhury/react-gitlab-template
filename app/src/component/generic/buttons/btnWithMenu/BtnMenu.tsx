@@ -1,8 +1,7 @@
 import React from 'react';
-import { BtnWithTextForBtnWithMenu } from './__partials/BtnWithText__';
-import { BtnDropDownForGenericBtnWithIcon } from './__partials/BtnDropDown__';
-import { DroppedDownMenuForBtnWithMenu } from './__partials/DroppedDownMenu__';
-
+import { BmBtn } from './partials/BmBtn';
+import { BmDropDown } from './partials/BmDropDown';
+import { BmMenu } from './partials/BmMenu';
 interface IBtnMenuProps {
     text: string;
     menu: any;
@@ -14,12 +13,12 @@ export const BtnMenu: React.FC<IBtnMenuProps> = (props) => {
 
     return (
         <div style={{display: 'flex'}}>
-            <BtnWithTextForBtnWithMenu text={text} {...rest}/>
-            <BtnDropDownForGenericBtnWithIcon>
-                <DroppedDownMenuForBtnWithMenu>
-                {menu}
-                </DroppedDownMenuForBtnWithMenu>
-            </BtnDropDownForGenericBtnWithIcon>
+            <BmBtn text={text} {...rest}/>
+            <BmDropDown>
+                <BmMenu>
+                    {menu}
+                </BmMenu>
+            </BmDropDown>
         </div>
     )
 }

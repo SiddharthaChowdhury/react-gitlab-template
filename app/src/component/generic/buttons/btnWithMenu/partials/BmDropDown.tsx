@@ -1,9 +1,9 @@
 import React from "react";
 import Menu from "@material-ui/core/Menu";
 
-interface IBtnDropDownForGenericBtnWithIconProps {}
+interface IBmDropDownProps {}
 
-export const BtnDropDownForGenericBtnWithIcon: React.FC<IBtnDropDownForGenericBtnWithIconProps> = (props) => {
+export const BmDropDown: React.FC<IBmDropDownProps> = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   function handleClick(event: any) {

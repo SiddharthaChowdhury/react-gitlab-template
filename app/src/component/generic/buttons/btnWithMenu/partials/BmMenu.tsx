@@ -1,11 +1,11 @@
 import React from 'react';
 import './partial.scss';
 
-interface IDroppedDownMenuForBtnWithMenuProps {
+interface IBmMenuProps {
 
 }
 
-export const DroppedDownMenuForBtnWithMenu: React.FC<IDroppedDownMenuForBtnWithMenuProps> = (props) => {
+export const BmMenu: React.FC<IBmMenuProps> = (props) => {
     return (
         <div className="partial__dropDownMenu">
             {props.children}

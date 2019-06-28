@@ -1,12 +1,12 @@
 import React from 'react';
 import './partial.scss';
 
-interface IBtnWithTextForBtnWithMenuProps {
+interface IBmBtnProps {
     text: string;
     [index: string]: any;
 }
 
-export const BtnWithTextForBtnWithMenu: React.FC<IBtnWithTextForBtnWithMenuProps> = (props) => {
+export const BmBtn: React.FC<IBmBtnProps> = (props) => {
     const {text, children, ...rest} = props;
 
     return (
