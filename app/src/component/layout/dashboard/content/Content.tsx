@@ -4,6 +4,9 @@ import './content.scss';
 import { IdNavStatus } from '../IdNavStatus';
 import { utilContent } from './utilContent';
 import { Breadcrumb } from './breadcrumb/Breadcrumb';
+import { Heading } from '../../../generic/typography/heading/Heading';
+import { Btn } from '../../../generic/buttons/btn/Btn';
+import { IdBtnColor } from '../../../generic/buttons/IdBtnColor';
 
 interface IContentOwnState {
     navStatus: IdNavStatus
@@ -25,8 +28,38 @@ export class Content extends React.PureComponent {
                     <div className="container-breadcrumb">
                         <Breadcrumb/>
                     </div>
+                    <Segment>
+                        <Heading> This is "Heading" from typography</Heading>
+                    </Segment>
+                    <Segment>
+                        <div style={{display: 'flex'}}>
+                            <Btn text={'Default Btn'}/>
+                            <Btn text={'Disable Btn'} solid={true}/>
+
+                            <Btn text={'Green Btn'} color={IdBtnColor.GREEN}/>
+                            <Btn text={'Green Btn'} color={IdBtnColor.GREEN} solid={true}/>
+
+                            <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE}/>
+                            <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} solid={true}/>
+
+                            <Btn text={'Blue Btn'} color={IdBtnColor.BLUE}/>
+                            <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} solid={true}/>
+
+                            <Btn text={'Red Btn'} color={IdBtnColor.RED}/>
+                            <Btn text={'Red Btn'} color={IdBtnColor.RED} solid={true}/>
+                        </div>
+                    </Segment>
                 </Container>
             </div>
         )
     }
+}
+
+
+export const Segment = ({children}: any) => {
+    return (
+        <div className="container-element">
+            {children}
+        </div>
+    )
 }
