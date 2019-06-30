@@ -28,7 +28,7 @@ export const TopNavButton: React.FC<ITopNavButtonProps> = (props) => {
             {getIcons(props)}
         </div>
     );
-}
+};
 
 const getIcons = (props: ITopNavButtonProps) => {
     const {icons} = props;
@@ -48,7 +48,7 @@ const getIcons = (props: ITopNavButtonProps) => {
         )
     })
     
-}
+};
 
 const isIconButton = (icon: any) => {
     if(icon !== faAngleDown) {
@@ -56,4 +56,4 @@ const isIconButton = (icon: any) => {
     }
 
     return 'topNavButton-iconArrow';
-}
+};

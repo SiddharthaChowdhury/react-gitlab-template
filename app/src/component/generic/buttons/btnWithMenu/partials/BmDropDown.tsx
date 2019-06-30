@@ -1,7 +1,13 @@
 import React from "react";
 import Menu from "@material-ui/core/Menu";
+import {faCaretDown} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {IdBtnColor} from "../../IdBtnColor";
+import {utilBtn} from "../../utilBtn";
 
-interface IBmDropDownProps {}
+interface IBmDropDownProps {
+    color?: IdBtnColor;
+}
 
 export const BmDropDown: React.FC<IBmDropDownProps> = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -15,9 +21,11 @@ export const BmDropDown: React.FC<IBmDropDownProps> = (props) => {
   }
 
   return (
-    <div>
+    <div style={{display: 'flex', alignItems: 'center'}}>
       {/* TODO: This needs to be styled as drop down icon button */}
-      <button onClick={handleClick}>Open Menu</button>
+      <button className={`partial__menuBtn partial__menuBtnDownBtn ${utilBtn.getColorClass(props.color)}`} onClick={handleClick} style={{borderRadius: '0px 3px 3px 0px'}}>
+          <FontAwesomeIcon icon={faCaretDown} className="menuItem-element-icon"/>
+      </button>
       <StyledMenu
         id="customized-menu"
         anchorEl={anchorEl}

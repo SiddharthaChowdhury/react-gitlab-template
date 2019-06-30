@@ -4,7 +4,10 @@
     font-weight: 400;
     padding: 6px 10px;
     cursor: pointer;
-    margin: 1px;
+
+    .btnIcon {
+        margin: 0 10px;
+    }
 }
 
 .btnGreen {

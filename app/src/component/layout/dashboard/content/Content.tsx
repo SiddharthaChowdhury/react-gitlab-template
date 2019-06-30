@@ -1,13 +1,13 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import './content.scss';
-import { IdNavStatus } from '../IdNavStatus';
-import { utilContent } from './utilContent';
-import { Breadcrumb } from './breadcrumb/Breadcrumb';
-import { Heading } from '../../../generic/typography/heading/Heading';
-import { Btn } from '../../../generic/buttons/btn/Btn';
-import { IdBtnColor } from '../../../generic/buttons/IdBtnColor';
-import { BtnMenu } from '../../../generic/buttons/btnWithMenu/BtnMenu';
+import {IdNavStatus} from '../IdNavStatus';
+import {utilContent} from './utilContent';
+import {Breadcrumb} from './breadcrumb/Breadcrumb';
+import {Heading} from '../../../generic/typography/heading/Heading';
+import {Btn} from '../../../generic/buttons/Btn';
+import {IdBtnColor} from '../../../generic/buttons/IdBtnColor';
+import {BtnMenu} from '../../../generic/buttons/btnWithMenu/BtnMenu';
 
 interface IContentOwnState {
     navStatus: IdNavStatus
@@ -33,27 +33,41 @@ export class Content extends React.PureComponent {
                         <Heading> This is "Heading" from typography</Heading>
                     </Segment>
                     <Segment>
-                        <div style={{display: 'flex', width: '100%'}}>
-                            <Btn text={'Default Btn'}/>
-                            <Btn text={'Disable Btn'} solid={true}/>
+                        <Btn text={'Default Btn'} style={{margin: '2px'}}/>
+                        <Btn text={'Disable Btn'} solid={true} style={{margin: '2px'}}/>
 
-                            <Btn text={'Green Btn'} color={IdBtnColor.GREEN}/>
-                            <Btn text={'Green Btn'} color={IdBtnColor.GREEN} solid={true}/>
+                        <Btn text={'Green Btn'} color={IdBtnColor.GREEN} style={{margin: '2px'}} />
+                        <Btn text={'Green Btn'} color={IdBtnColor.GREEN} solid={true} style={{margin: '2px'}} />
 
-                            <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE}/>
-                            <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} solid={true}/>
+                        <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} style={{margin: '2px'}}/>
+                        <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} solid={true} style={{margin: '2px'}} />
 
-                            <Btn text={'Blue Btn'} color={IdBtnColor.BLUE}/>
-                            <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} solid={true}/>
+                        <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} style={{margin: '2px'}}/>
+                        <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} solid={true} style={{margin: '2px'}} />
 
-                            <Btn text={'Red Btn'} color={IdBtnColor.RED}/>
-                            <Btn text={'Red Btn'} color={IdBtnColor.RED} solid={true}/>
-                        </div>
-                        <div style={{display: 'flex', width: '100%'}}>
-                            <BtnMenu text="button BtnMenu" menu={
-                                <h3>Menu Content in dropdown</h3>
-                            } />
-                        </div>
+                        <Btn text={'Red Btn'} color={IdBtnColor.RED} style={{margin: '2px'}} />
+                        <Btn text={'Red Btn'} color={IdBtnColor.RED} solid={true} style={{margin: '2px'}} />
+                    </Segment>
+                    <Segment>
+                        <BtnMenu text="button BtnMenu" menu={
+                            <h3>Menu Content in dropdown</h3>
+                        } />
+
+                        <BtnMenu text="button BtnMenu" color={IdBtnColor.BLUE} menu={
+                            <h3>Menu Content in dropdown</h3>
+                        } />
+
+                        <BtnMenu text="button BtnMenu" color={IdBtnColor.RED} menu={
+                            <h3>Menu Content in dropdown</h3>
+                        } />
+
+                        <BtnMenu text="button BtnMenu" color={IdBtnColor.GREEN} menu={
+                            <h3>Menu Content in dropdown</h3>
+                        } />
+
+                        <BtnMenu text="button BtnMenu" color={IdBtnColor.ORANGE} menu={
+                            <h3>Menu Content in dropdown</h3>
+                        } />
                     </Segment>
                 </Container>
             </div>

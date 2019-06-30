@@ -7,12 +7,12 @@ import { IMenuItem } from '../menuItem/IMenuItem';
 import { MenuItem } from '../menuItem/MenuItem';
 
 export class ExpandedLeftNav extends React.PureComponent {
-    private menuList: Array<IMenuItem> = []
+    private menuList: Array<IMenuItem> = [];
     constructor(props: any) {
-        super(props)
+        super(props);
 
         menuItemMap.forEach((value: IMenuItem, key: string) => {
-            this.menuList.push(value)
+            this.menuList.push(value);
         })
     }
 
@@ -21,10 +21,10 @@ export class ExpandedLeftNav extends React.PureComponent {
             <div className="expandedLeftNav">
                 <div className="expandedLeftNav-container">
                     <div className="expandedLeftNav-project">
-                        <div className="expandedLeftNav-project-icon"></div>
+                        <div className="expandedLeftNav-project-icon"/>
                         <div className="expandedLeftNav-project-name">Project 1</div>
                     </div>
-                    <div className="expandedleftNav-menuItems">
+                    <div className="expandedLeftNav-menuItems">
                         {this.menuList.map((item: IMenuItem, index: number) => {
                             return (
                             <MenuItem 
@@ -43,6 +43,6 @@ export class ExpandedLeftNav extends React.PureComponent {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }

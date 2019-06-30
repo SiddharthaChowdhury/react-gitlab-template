@@ -8,4 +8,4 @@ export const Heading:React.FC<IHeadingProps> = ({children}) => {
     return (
         <h2>{children}</h2>
     );
-}
+};

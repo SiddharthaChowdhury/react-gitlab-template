@@ -1,4 +1,19 @@
-.partial__dropDownMenu{
-    padding: 15px;
-    border: 1px solid black;
+.partial__menuBtn {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 10px;
+    cursor: pointer;
+
+    &:focus {
+        outline: 0;
+    }
+}
+.partial__menuBtnBtn {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+.partial__menuBtnDownBtn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
