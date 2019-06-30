@@ -12,22 +12,17 @@ interface IBtnMenuProps {
 }
 
 export const BtnMenu: React.FC<IBtnMenuProps> = (props) => {
-    const {text, menu, color, children, ...rest} = props;
+    const {text, menu, color, children, className,  ...rest} = props;
 
     return (
-        <div style={{display: 'flex'}}>
+        <div style={{display: 'flex'}} className={`${className ? className: '' }`}>
             <BmBtn text={text} {...rest} color={color}/>
             <BmDropDown color={color}>
-                <div style={menuStyle}>
+                <div className='popUpMenu'>
                     {menu}
                 </div>
             </BmDropDown>
         </div>
     )
-};
-
-const menuStyle: React.CSSProperties = {
-    padding: '15px',
-    border: '1px solid black'
 };
 

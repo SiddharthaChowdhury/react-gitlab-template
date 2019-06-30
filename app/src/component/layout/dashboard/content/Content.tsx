@@ -33,41 +33,41 @@ export class Content extends React.PureComponent {
                         <Heading> This is "Heading" from typography</Heading>
                     </Segment>
                     <Segment>
-                        <Btn text={'Default Btn'} style={{margin: '2px'}}/>
-                        <Btn text={'Disable Btn'} solid={true} style={{margin: '2px'}}/>
+                        <Btn text={'Default Btn'} className='container-btn-elements'/>
+                        <Btn text={'Disable Btn'} solid={true} className='container-btn-elements'/>
 
-                        <Btn text={'Green Btn'} color={IdBtnColor.GREEN} style={{margin: '2px'}} />
-                        <Btn text={'Green Btn'} color={IdBtnColor.GREEN} solid={true} style={{margin: '2px'}} />
+                        <Btn text={'Green Btn'} color={IdBtnColor.GREEN} className='container-btn-elements' />
+                        <Btn text={'Green Btn'} color={IdBtnColor.GREEN} solid={true} className='container-btn-elements' />
 
-                        <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} style={{margin: '2px'}}/>
-                        <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} solid={true} style={{margin: '2px'}} />
+                        <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} className='container-btn-elements'/>
+                        <Btn text={'Orange Btn'} color={IdBtnColor.ORANGE} solid={true} className='container-btn-elements' />
 
-                        <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} style={{margin: '2px'}}/>
-                        <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} solid={true} style={{margin: '2px'}} />
+                        <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} className='container-btn-elements'/>
+                        <Btn text={'Blue Btn'} color={IdBtnColor.BLUE} solid={true} className='container-btn-elements' />
 
-                        <Btn text={'Red Btn'} color={IdBtnColor.RED} style={{margin: '2px'}} />
-                        <Btn text={'Red Btn'} color={IdBtnColor.RED} solid={true} style={{margin: '2px'}} />
+                        <Btn text={'Red Btn'} color={IdBtnColor.RED} className='container-btn-elements' />
+                        <Btn text={'Red Btn'} color={IdBtnColor.RED} solid={true} className='container-btn-elements' />
                     </Segment>
                     <Segment>
                         <BtnMenu text="button BtnMenu" menu={
                             <h3>Menu Content in dropdown</h3>
-                        } />
+                        } className='container-btn-elements'/>
 
                         <BtnMenu text="button BtnMenu" color={IdBtnColor.BLUE} menu={
                             <h3>Menu Content in dropdown</h3>
-                        } />
+                        } className='container-btn-elements' />
 
                         <BtnMenu text="button BtnMenu" color={IdBtnColor.RED} menu={
                             <h3>Menu Content in dropdown</h3>
-                        } />
+                        } className='container-btn-elements' />
 
                         <BtnMenu text="button BtnMenu" color={IdBtnColor.GREEN} menu={
                             <h3>Menu Content in dropdown</h3>
-                        } />
+                        } className='container-btn-elements' />
 
                         <BtnMenu text="button BtnMenu" color={IdBtnColor.ORANGE} menu={
                             <h3>Menu Content in dropdown</h3>
-                        } />
+                        } className='container-btn-elements' />
                     </Segment>
                 </Container>
             </div>

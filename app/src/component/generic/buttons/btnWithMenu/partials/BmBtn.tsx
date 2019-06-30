@@ -11,7 +11,7 @@ interface IBmBtnProps {
 }
 
 export const BmBtn: React.FC<IBmBtnProps> = (props) => {
-    const {text, color, children, ...rest} = props;
+    const {text, color, children, className, ...rest} = props;
 
     return (
         <button className={`partial__menuBtn partial__menuBtnBtn ${utilBtn.getColorClass(color)}`} style={{borderRadius: '3px 0px 0px 3px'}} {...rest}>

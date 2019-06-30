@@ -1,3 +1,4 @@
+@import "../../../variables.scss";
 .btn {
     border-radius: 3px;
     font-size: 14px;
@@ -96,4 +97,10 @@
         background-color: #f8f9fa;
         color: #000;
     }
+}
+
+.popUpMenu {
+    background: $PopupBackGround;
+    border: 1px solid $PopupBorder;
+    padding: 15px;
 }
