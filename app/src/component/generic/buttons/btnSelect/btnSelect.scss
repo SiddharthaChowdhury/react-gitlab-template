@@ -1,0 +1,39 @@
+@import "../../../../variables.scss";
+.btnSelect {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:focus {
+    outline: 0;
+  }
+
+  .btnSelect-icon2 {
+    margin-left: 10px;
+  }
+}
+
+.btnSelectDropDownMenu {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: $PopupBackGround;
+  border: 1px solid $PopupBorder;
+  border-radius: 3px;
+  width: 150px;
+
+  .btnSelectDropDownMenu-item {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 10px;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+  }
+}
