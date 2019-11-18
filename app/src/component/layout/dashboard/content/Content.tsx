@@ -11,6 +11,7 @@ import {BtnMenu} from '../../../generic/buttons/btnWithMenu/BtnMenu';
 import {BtnSelect} from "../../../generic/buttons/btnSelect/BtnSelect";
 import { InputText } from '../../../generic/input/text/InputText';
 import { InputCheckBox } from '../../../generic/input/checkbox/InputCheckBox';
+import { InputRadio } from '../../../generic/input/radio/InputRadio';
 
 interface IContentOwnState {
     navStatus: IdNavStatus
@@ -78,6 +79,16 @@ export class Content extends React.PureComponent {
                                 styles: {},
                                 onChange: (status: any) => console.log(status)
                             }}
+                        />
+                    </Segment>
+                    <Segment>
+                        <InputRadio
+                            config={[
+                                {checked: false, label: "Hot", styles: {marginLeft: "15px"}, value: "hot"},
+                                {checked: true, label: "Top", styles: {marginLeft: "15px"}, value: "top"},
+                                {checked: false, label: "User", styles: {marginLeft: "15px"}, value: "user"},
+                            ]}
+                            onChange={(status: any) => console.log(status)}
                         />
                     </Segment>
                 </Container>
