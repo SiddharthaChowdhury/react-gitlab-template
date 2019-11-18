@@ -10,6 +10,7 @@ import {IdBtnColor} from '../../../generic/buttons/IdBtnColor';
 import {BtnMenu} from '../../../generic/buttons/btnWithMenu/BtnMenu';
 import {BtnSelect} from "../../../generic/buttons/btnSelect/BtnSelect";
 import { InputText } from '../../../generic/input/text/InputText';
+import { InputCheckBox } from '../../../generic/input/checkbox/InputCheckBox';
 
 interface IContentOwnState {
     navStatus: IdNavStatus
@@ -60,21 +61,24 @@ export class Content extends React.PureComponent {
                         <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.BLUE} className='container-btn-elements'/>
                         <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.ORANGE} className='container-btn-elements' />
                         <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.RED} className='container-btn-elements' />
-
-                        {/*------------------------------*/}
-                        <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} className='container-btn-elements' solid={true} />
-                        <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.GREEN} className='container-btn-elements' solid={true} />
-                        <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.BLUE} className='container-btn-elements' solid={true}/>
-                        <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.ORANGE} className='container-btn-elements' solid={true} />
-                        <BtnSelect text={'BtnSelect'} options={getDummySelectItems()} color={IdBtnColor.RED} className='container-btn-elements' solid={true} />
                     </Segment>
                     <Segment>
                         <InputText/>
                         <InputText placeholder={"Placeholder"}/>
                         <InputText type={"password"} label={"Password"}/>
                         <InputText header={"There is a header in this case"} footer={"Also there is a footer?"}/>
-                        <InputText header={<div>There is a header with a <a href="#">small link</a></div>} footer={<div>And a <a href="#">LINK</a> in the footer as well</div>}/>
+                        <InputText header={<div>There is a header with a <a href="/">small link</a></div>} footer={<div>And a <a href="/">LINK</a> in the footer as well</div>}/>
                         <InputText header={"There is a header in this case"} footer={"Also there is a footer?"} label={"Subject"}/>
+                    </Segment>
+                    <Segment>
+                        <InputCheckBox 
+                            config={{
+                                checked: true,
+                                label: "Checkbox",
+                                styles: {},
+                                onChange: (status: any) => console.log(status)
+                            }}
+                        />
                     </Segment>
                 </Container>
             </div>
